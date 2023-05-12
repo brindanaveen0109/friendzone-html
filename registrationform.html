@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <img src="QP-files/Friends.PNG" width="200" height="200" alt="Image Description">
+    <br>
+    <center><header><strong><h1>Friendship zone!</h1></strong></header></center>
+    <article>
+        <section>
+            <h2>Add your details to register</h2>
+            <form action="registrationconfirmatioon.html" method="get">
+                <h4>
+                <label for="name">Name:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100"><br><br>
+                <label for="DOB">Birth Day:</label>
+                <input type="date" id="DOB" name="age"><br><br>
+                Gender: 
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female"><br><br>
+                <label for="message">About:</label>
+                <textarea id="message" name="user_message" rows="4" cols="50"></textarea><br><br>
+                <label for="number">Phone:</label>
+                <input type="number" id="number" name="phone_number"><br><br>
+                Interested in:
+                <label for="friendship">Friendship</label>
+                <input type="radio" id="friendship" name="interested" value="friendship">
+                <label for="dating">Dating</label>
+                <input type="radio" id="dating" name="interested" value="dating">
+                <label for="file">Attachment:</label>
+                <input type="file" id="file" name="my_file"><br><br>
+                <a href="http://127.0.0.1:5500/registrationconfirmatioon.html" target="_blank">
+                <button type="submit">Submit</button>
+            </a>
+            <a href="http://127.0.0.1:5500/registrationconfirmationforadmin.html" target="_blank">
+                <button type="submit">Submit as Admin</button>    
+            </a>
+            </h4>
+            </form>
+        </section>
+    </article>
+</body>
+</html>
